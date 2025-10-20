@@ -1,0 +1,111 @@
+# Information Search
+
+## **1. Overview**
+
+**Information Search** is a specialized utility designed to streamline access to **FPGA documentation** on the **Microchip** website.
+
+With **Information Search**, users can quickly locate:
+
+* Datasheets
+* Application notes
+* Reference manuals
+* Other technical resources
+
+All results are sourced **directly from official Microchip FPGA web resources**.
+This tool is ideal for **engineers**, **developers**, and **administrators** who require **fast, reliable access** to the latest FPGA documentation.
+
+---
+
+## **2. Features**
+
+* **High-speed search** across all Microchip FPGA documentation
+* **Filter by document type** (datasheet, application note, manual, etc.)
+* **Customizable search parameters** for more targeted and efficient results
+
+---
+
+## **3. System Requirements**
+
+| Requirement          | Details                                              |
+| -------------------- | ---------------------------------------------------- |
+| **Operating System** | Windows 10 / Windows 11                              |
+| **Privileges**       | Local administrator rights required for installation |
+| **Memory**           | Minimum 4 GB RAM                                     |
+| **Disk Space**       | Minimum 1 GB free space                              |
+
+---
+
+## **4. Installation Instructions**
+
+> **Important:** You **must** have *local administrator privileges* to install Information Search.
+> If you do not have these privileges, please contact your IT department.
+
+### **Windows Installation Steps**
+
+1. **Download the installer** from one of the following locations:
+
+   * Releases: [https://github.com/MicrochipTech/information-search/releases](https://github.com/MicrochipTech/information-search/releases)
+2. **Right-click** the downloaded installer and select **“Run as administrator.”**
+3. Follow the **on-screen prompts** to complete the installation.
+
+---
+
+## **5. Important Download Notice**
+
+When viewing the **GitHub release page**, you will see multiple files under the **Assets** section.
+
+Please **download only the `.exe` file** - for example:
+
+```
+infosearch-2025.10.15.exe
+```
+
+Do **not** download the automatically generated files labeled:
+
+* **Source code (zip)**
+* **Source code (tar.gz)**
+
+These are automatically created by GitHub and **do not contain the actual application/any source code**.
+
+**Download this:**
+`infosearch-<release-number>.exe`
+
+**Ignore these:**
+`Source code (zip)`
+`Source code (tar.gz)`
+
+---
+
+## **6. Usage**
+
+1. **Launch** your preferred web browser.
+2. **Navigate** to:
+
+   ```
+   http://localhost:5002/
+   ```
+
+   or use the **hostname and port** specified during installation.
+3. **Enter keywords** to search for FPGA documentation on the Microchip website.
+4. **Filter** results by:
+
+   * Document type
+   * Product family
+   * Other search parameters
+
+---
+
+## **7. Support & Documentation**
+
+For troubleshooting and further assistance:
+
+* Open the **Information Search** interface.
+* Click **Help** on the **right-hand side** of the top banner to access the **User Guide**.
+
+---
+
+### **Contact**
+
+For additional support or feedback, please reach out via your organization’s IT or Microchip technical support channel.
+
+---
