@@ -50,6 +50,18 @@ This tool is ideal for **engineers**, **developers**, and **administrators** who
 
 ---
 
+### **Removing a Previous Installation**
+
+If you have previously installed the tool, please follow these instructions to remove it before installing a new version:
+
+1. **Navigate** to the installation directory.
+2. **Run** the file named `maintenancetool.exe` as administrator.
+3. Follow the on-screen prompts to **uninstall** the existing version.
+4. After the uninstall process completes, **reboot your machine** to remove any remaining directories.
+5. Once your system restarts, you can **install the new version** following the steps above.
+
+---
+
 ## **5. Important Download Notice**
 
 When viewing the **GitHub release page**, you will see multiple files under the **Assets** section.
@@ -65,7 +77,7 @@ Do **not** download the automatically generated files labeled:
 * **Source code (zip)**
 * **Source code (tar.gz)**
 
-These are automatically created by GitHub and **do not contain the actual application/any source code**.
+These are automatically created by GitHub and **do not contain the actual application or any source code**.
 
 **Download this:**
 `infosearch-<release-number>.exe`
