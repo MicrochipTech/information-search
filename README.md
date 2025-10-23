@@ -46,7 +46,15 @@ This tool is ideal for **engineers**, **developers**, and **administrators** who
 
    * Releases: [https://github.com/MicrochipTech/information-search/releases](https://github.com/MicrochipTech/information-search/releases)
 2. **Right-click** the downloaded installer and select **“Run as administrator.”**
-3. Follow the **on-screen prompts** to complete the installation.
+3. When prompted for an installation path:
+
+   * **Do not install in the default “la” account directory**.
+   * Choose or create a new **empty folder** for installation.
+   * The installation directory **must be empty** before proceeding.
+
+   **Example:**
+   ![LA Account Installation Warning](README-attachments/la-account-image.png)
+4. Follow the **on-screen prompts** to complete the installation.
 
 ---
 
@@ -59,6 +67,47 @@ If you have previously installed the tool, please follow these instructions to r
 3. Follow the on-screen prompts to **uninstall** the existing version.
 4. After the uninstall process completes, **reboot your machine** to remove any remaining directories.
 5. Once your system restarts, you can **install the new version** following the steps above.
+
+---
+
+## **Troubleshooting Installation Conflict**
+
+### **Problem**
+
+When installing the latest version (e.g., `infosearch-2025.10.15.exe`), you may see this error:
+
+> “Found services: mchp-solr-service, mchp-info-search from a previous installation. Run the uninstaller to remove the existing Microchip FPGA Information Search installation.”
+
+This happens when old services remain registered after uninstalling.
+
+**Example:**
+![Installation Conflict Error](README-attachments/existing-services-image.png)
+
+---
+
+### **Solution**
+
+1. Open **Command Prompt as Administrator**.
+
+2. Run the following commands to remove the leftover services:
+
+   ```
+   sc delete mchp-info-search
+   sc delete mchp-solr-service
+   ```
+
+   Both should return:
+   `[SC] DeleteService SUCCESS`
+
+   **Example:**
+   ![Command Prompt Deletion](README-attachments/delete-service-image.png)
+
+3. Refresh the **Services** tab in **Task Manager** to confirm both entries are gone.
+
+4. Reinstall the latest version from:
+   [https://github.com/MicrochipTech/information-search](https://github.com/MicrochipTech/information-search)
+
+After this, installation should complete successfully.
 
 ---
 
