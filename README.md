@@ -45,15 +45,18 @@ This tool is ideal for **engineers**, **developers**, and **administrators** who
 1. **Download the installer** from one of the following locations:
 
    * Releases: [https://github.com/MicrochipTech/information-search/releases](https://github.com/MicrochipTech/information-search/releases)
+
 2. **Right-click** the downloaded installer and select **“Run as administrator.”**
+
 3. When prompted for an installation path:
 
-   * **Do not install in the default “la” account directory**.
+   * **Do not install in the default "la" account directory.**
    * Choose or create a new **empty folder** for installation.
    * The installation directory **must be empty** before proceeding.
 
    **Example:**
    ![LA Account Installation Warning](README-attachments/la-account-image.png)
+
 4. Follow the **on-screen prompts** to complete the installation.
 
 ---
@@ -65,7 +68,7 @@ If you have previously installed the tool, please follow these instructions to r
 1. **Navigate** to the installation directory.
 2. **Run** the file named `maintenancetool.exe` as administrator.
 3. Follow the on-screen prompts to **uninstall** the existing version.
-4. After the uninstall process completes, **reboot your machine** to remove any remaining directories.
+4. **Important:** After the uninstall process completes, **you must reboot your machine** before attempting to install the new version.
 5. Once your system restarts, you can **install the new version** following the steps above.
 
 ---
@@ -76,7 +79,7 @@ If you have previously installed the tool, please follow these instructions to r
 
 When installing the latest version (e.g., `infosearch-2025.10.15.exe`), you may see this error:
 
-> “Found services: mchp-solr-service, mchp-info-search from a previous installation. Run the uninstaller to remove the existing Microchip FPGA Information Search installation.”
+> "Found services: mchp-solr-service, mchp-info-search from a previous installation. Run the uninstaller to remove the existing Microchip FPGA Information Search installation."
 
 This happens when old services remain registered after uninstalling.
 
@@ -162,6 +165,21 @@ For troubleshooting and further assistance:
 
 * Open the **Information Search** interface.
 * Click **Help** on the **right-hand side** of the top banner to access the **User Guide**.
+
+---
+
+## **8. Changelog**
+
+### **Version 2026.03.23**
+- Added **Major Version** and **Minor Version** grouping for **Product Category**. Minor Versions are collapsed by default.
+- Improved navigation by preserving the last state of the search page when navigating away and returning.
+- Updated the **Documents** page to display version information.
+- Added automatic scrolling to the top of the page when moving to the next page of results.
+- Solr maximum memory is now set to **256 MB**.
+- Added two service control scripts under the `service_win` directory in the application's installed directory:
+  - `mchp-solr-start.bat`
+  - `mchp-solr-stop.bat`
+- **Important:** These scripts must be run as **Administrator** to start or stop the Solr service.
 
 ---
 
