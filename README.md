@@ -170,6 +170,10 @@ For troubleshooting and further assistance:
 
 ## **8. Changelog**
 
+
+### **Version 2026.04.20**
+- Addressed a bug affecting pagination in search results.
+
 ### **Version 2026.03.23**
 - Added **Major Version** and **Minor Version** grouping for **Product Category**. Minor Versions are collapsed by default.
 - Improved navigation by preserving the last state of the search page when navigating away and returning.
